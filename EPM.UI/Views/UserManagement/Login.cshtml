@@ -1,0 +1,91 @@
+﻿@{ Layout = null;}
+@model EPM.Core.UserManagement.Authenticate
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Customer Login Form 
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+</head>
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .global-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f5f5;
+    }
+
+    form {
+        padding-top: 10px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .card-title {
+        font-weight: 300;
+    }
+
+    .btn {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .login-form {
+        width: 330px;
+        margin: 20px;
+    }
+
+    .sign-up {
+        text-align: center;
+        padding: 20px 0 0;
+    }
+
+    .alert {
+        margin-bottom: -30px;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="pt-5">
+        <div class="global-container">
+            <div class="card login-form">
+                <div class="card-body">
+                    <h3 class="card-title text-center"> EPI Login </h3>
+                    <div class="card-text">
+                        <form asp-action="Login" asp-controller="Authenticate">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"> User name </label>
+                                <input class="form-control form-control-sm"
+                                       asp-for="UserName">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Enter Password </label>
+                                <input class="form-control form-control-sm" asp-for="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"> Sign in </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

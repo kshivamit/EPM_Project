@@ -1,0 +1,34 @@
+﻿@model EPM.Core.CustomerManagement.Customer
+<div class="container">
+    <div class="panel">
+        <div class="panel-header">
+            Create Customer
+        </div>
+        <div class="panel-body">
+            <form asp-controller="Customer" asp-action="CreateCustomer">
+                <div class="col-md-12">
+                    <div class="form-group col-md-4">
+                        <input type="hidden" asp-for="Id" />
+                        <label asp-for="Name">Name:</label>
+                        <input type="text" class="form-control" asp-for="Name">
+                        <span class="text-danger" asp-validation-for="Name"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="email">Email:</label>
+                        <input class="form-control" asp-for="Email">
+                        <span asp-validation-for="Email" calss="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Phone">Phone:</label>
+                        <input class="form-control" asp-for="Phone">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

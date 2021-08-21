@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EPM.Repository/1.0.0": {
+        "dependencies": {
+          "EPM.Core": "1.0.0"
+        },
+        "runtime": {
+          "EPM.Repository.dll": {}
+        }
+      },
+      "EPM.Core/1.0.0": {
+        "runtime": {
+          "EPM.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EPM.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EPM.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

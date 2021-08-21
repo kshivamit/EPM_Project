@@ -1,0 +1,9 @@
+S:\Omnie Solutions\EPM\EPM\EPM.Core\bin\Debug\netcoreapp3.1\EPM.Core.deps.json
+S:\Omnie Solutions\EPM\EPM\EPM.Core\bin\Debug\netcoreapp3.1\EPM.Core.dll
+S:\Omnie Solutions\EPM\EPM\EPM.Core\bin\Debug\netcoreapp3.1\EPM.Core.pdb
+S:\Omnie Solutions\EPM\EPM\EPM.Core\obj\Debug\netcoreapp3.1\EPM.Core.csproj.AssemblyReference.cache
+S:\Omnie Solutions\EPM\EPM\EPM.Core\obj\Debug\netcoreapp3.1\EPM.Core.AssemblyInfoInputs.cache
+S:\Omnie Solutions\EPM\EPM\EPM.Core\obj\Debug\netcoreapp3.1\EPM.Core.AssemblyInfo.cs
+S:\Omnie Solutions\EPM\EPM\EPM.Core\obj\Debug\netcoreapp3.1\EPM.Core.csproj.CoreCompileInputs.cache
+S:\Omnie Solutions\EPM\EPM\EPM.Core\obj\Debug\netcoreapp3.1\EPM.Core.dll
+S:\Omnie Solutions\EPM\EPM\EPM.Core\obj\Debug\netcoreapp3.1\EPM.Core.pdb

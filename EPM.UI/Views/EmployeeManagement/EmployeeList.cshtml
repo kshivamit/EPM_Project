@@ -1,0 +1,63 @@
+﻿@model IEnumerable<EPM.Core.EmployeeManagement.Employee>
+<script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<table class="table" style="border:solid">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Phone
+            </th>
+            <th>
+                Employee Code
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in Model)
+        {
+            <tr>
+                <td>
+                    @data.Name
+                </td>
+                <td>
+                    @data.Email
+                </td>
+                <td>
+                    @data.Phone
+                </td>
+                <td>
+                    @data.EmpCode
+                </td>
+                <td>
+                    <button onclick="DeleteRecord(@data.Id)" class="btn btn-danger">DELETE</button>
+                    <a asp-controller="Employee" asp-action="Index" asp-route-id="@data.Id" class="btn btn-primary">Update</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    function DeleteRecord(Id) {
+        if (confirm("Are you sure to delete this entry?")) {
+            $.get("/Employee/DeleteEmployee", { Id: Id }, function (response) {
+                if (response) {
+                    alert("Record deleted Successfully!!!");
+                    location.reload();
+                }
+                else {
+                    alert("Unable to delete the record, Please contact admin.");
+                }
+            });
+        }
+    }
+</script>
